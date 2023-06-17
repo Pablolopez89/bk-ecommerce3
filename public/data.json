@@ -1,0 +1,30 @@
+[
+    {
+        "id":1,
+        "name":"Campera",
+        "marca": "Grisino",
+        "price": 2800,
+        "img":"https://http2.mlstatic.com/D_NQ_NP_780435-MLA50059896888_052022-O.webp"
+    },
+    {
+        "id":2,
+        "name":"Campera Corderito",
+        "marca": "Grisino",
+        "price": 2500,
+        "img":"https://http2.mlstatic.com/D_NQ_NP_894663-MLA50059896889_052022-O.webp"
+    },
+    {
+        "id":3,
+        "name":"Campera Poliester",
+        "marca": "Wanama",
+        "price": 2000,
+        "img":"https://http2.mlstatic.com/D_NQ_NP_845858-MLA50059898407_052022-O.webp"
+    },
+    {
+        "id":4,
+        "name":"Mono de piel",
+        "marca": "Pirulito",
+        "price": 3000,
+        "img":"https://http2.mlstatic.com/D_NQ_NP_941799-MLA50059903391_052022-O.webp"
+    }
+]

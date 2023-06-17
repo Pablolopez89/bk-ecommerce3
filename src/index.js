@@ -3,7 +3,9 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import 'bootstrap/dist/css/bootstrap.css';
 import ItemListContainer from './components/itemListContainer/itemListContainer';
+import CardWidget from './components/cartWidget/cardWidget';
 import {createBrowserRouter, RouterProvider,} from "react-router-dom";
+import DataProvider from './components/cartContext/cartContext';
 
 const router = createBrowserRouter([
   {
@@ -11,7 +13,11 @@ const router = createBrowserRouter([
     element: <ItemListContainer />,
   },
   {
-    path: "/",
+    path: "/cardWidget",
+    element: <CardWidget />,
+  },
+  {
+    path: "/category/:id",
     element: <ItemListContainer />,
   },  
 ]);
@@ -19,9 +25,11 @@ const router = createBrowserRouter([
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
-    <RouterProvider router={router} />
-  </React.StrictMode>
+  <DataProvider>
+      <React.StrictMode>
+         <RouterProvider router={router} />
+      </React.StrictMode>
+  </DataProvider>
 );
 
 
